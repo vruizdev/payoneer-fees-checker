@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "payoneer-fees-checker",
+    "name": "Payoneer Fees Checker",
     "slug": "payoneer-fees-checker",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.vruizdev.payoneerfeeschecker"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +38,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "49f13726-66d9-48a1-9a0d-e4cddeb03bb8"
+      }
     }
   }
 }
