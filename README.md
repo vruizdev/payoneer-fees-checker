@@ -1,50 +1,49 @@
-# Welcome to your Expo app 👋
+# Payoneer Fee Calculator
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Calculadora de comisiones para retiros ATM de Payoneer en Nicaragua.
 
-## Get started
+## Funcionalidades Principales
 
-1. Install dependencies
+### 1. Toggle de Conversión (Nuevo)
+Permite calcular con o sin la comisión de conversión (3.5%):
+- **ON**: Retiro en Córdobas (USD → NIO) - incluye 3.5%
+- **OFF**: Retiro en Dólares - sin conversión
 
-   ```bash
-   npm install
-   ```
+![Toggle de conversión inicial](docs/initial_retiro_screen_with_conversion_switch_1767901454713.png)
 
-2. Start the app
+### 2. Comparación Con/Sin Conversión
 
-   ```bash
-   npx expo start
-   ```
+**Retiro $100 en BAC CON conversión:**
+- Total requerido: **$113.45**
 
-In the output, you'll find options to open the app in a
+**Retiro $100 en BAC SIN conversión:**
+- Total requerido: **$109.95**
+- Ahorro: $3.50
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+![Resultado sin conversión](docs/retiro_results_without_conversion_bac_100_1767901526262.png)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## Límites de Retiro por Banco
 
-When you're ready, run:
+| Banco | Fee Cajero | Máx/Retiro |
+|-------|------------|------------|
+| BAC | $5.00 | $600 |
+| Lafise | $0 | $500 |
+| Banpro | $0 | $500 |
+| Ficohsa | $0 | $500 |
+
+---
+
+## Demo Completa
+
+![Demo del toggle de conversión](docs/conversion_toggle_test_1767901446369.webp)
+
+---
+
+## Cómo Ejecutar
 
 ```bash
-npm run reset-project
+cd payoneer-fees-checker
+npx expo start
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
