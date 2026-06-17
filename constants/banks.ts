@@ -10,26 +10,26 @@ export const BANKS: Bank[] = [
     {
         id: 'bac',
         name: 'BAC',
-        atmFee: 5.0,
+        atmFee: 7.0,
         maxWithdrawal: 600, // User confirmed this limit per transaction
     },
     {
         id: 'lafise',
         name: 'Lafise',
-        atmFee: 0,
+        atmFee: 7.0,
         maxWithdrawal: 500, // Official limit per transaction
     },
     {
         id: 'banpro',
         name: 'Banpro',
-        atmFee: 0,
+        atmFee: 7.0,
         maxWithdrawal: 800, // Standard ATM limit
     },
     {
         id: 'ficohsa',
         name: 'Ficohsa',
         atmFee: 0,
-        maxWithdrawal: 600, // BANCARED network limit per transaction
+        maxWithdrawal: 1000, // BANCARED network limit per transaction
     },
 ];
 
